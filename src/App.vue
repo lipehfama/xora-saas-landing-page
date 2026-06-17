@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Header from "./components/layout/Header.vue";
 import Hero from "./components/sections/Hero.vue";
+import Features from "./components/sections/Features.vue";
+import Pricing from "./components/sections/Pricing.vue";
 import Footer from "./components/layout/Footer.vue";
 </script>
 
@@ -8,6 +10,8 @@ import Footer from "./components/layout/Footer.vue";
   <main class="overflow-hidden">
     <Header />
     <Hero />
+    <Features />
+    <Pricing />
     <Footer />
   </main>
 </template>

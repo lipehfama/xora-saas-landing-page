@@ -16,7 +16,7 @@ import zapIcon from "../../assets/images/zap.svg";
           Amazingly simple
         </h1>
 
-        <p class="max-2-440 body-1 mb-14 max-md:mb-10">
+        <p class="body-1 mb-14 max-w-440 max-md:mb-10">
           We designed Xora AI Video Editor to be an easy to use, quick to learn,
           and surprisingly powerful.
         </p>

@@ -17,7 +17,7 @@ defineEmits<{
   <component
     :is="href ? 'a' : 'button'"
     :href="href"
-    class="g5 group relative rounded-2xl p-0.5 shadow-500"
+    class="g5 group relative rounded-2xl p-0.5 shadow-500 cursor-pointer"
     :class="containerClassName"
     @click="$emit('click')"
   >

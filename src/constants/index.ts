@@ -1,25 +1,54 @@
 import { icons } from "./icons";
+import feature1 from "@/assets/images/feature-1.png";
+import feature2 from "@/assets/images/feature-2.png";
+import magicTouch from "@/assets/images/magictouch.svg";
+import docs from "@/assets/images/docs.svg";
+import detail1 from "@/assets/images/detail-1.png";
+import detail2 from "@/assets/images/detail-2.png";
+import detail3 from "@/assets/images/detail-3.png";
+import detail4 from "@/assets/images/detail-4.png";
+import circle from "@/assets/images/circle.svg";
+import triangle from "@/assets/images/triangle.svg";
+import hexagon from "@/assets/images/hexagon.svg";
+import plan1 from "@/assets/images/plan-1.png";
+import plan2 from "@/assets/images/plan-2.png";
+import plan3 from "@/assets/images/plan-3.png";
+import jessicaSaunders from "@/assets/images/testimonials/jessica-saunders.png";
+import markErixon from "@/assets/images/testimonials/mark-erixon.png";
+import melanieHurst from "@/assets/images/testimonials/melanie-hurst.png";
+import aliciaBarker from "@/assets/images/testimonials/alicia-barker.png";
+import beckySnider from "@/assets/images/testimonials/becky-snider.png";
+import jimBradley from "@/assets/images/testimonials/jim-bradley.png";
+import afterpay from "@/assets/images/logos/afterpay.svg";
+import amplitude from "@/assets/images/logos/amplitude.svg";
+import sonos from "@/assets/images/logos/sonos.svg";
+import maze from "@/assets/images/logos/maze.svg";
+import drips from "@/assets/images/logos/drips.svg";
+import xIcon from "@/assets/images/socials/x.svg";
+import threads from "@/assets/images/socials/threads.svg";
+import instagram from "@/assets/images/socials/instagram.svg";
+import discord from "@/assets/images/socials/discord.svg";
 
 export const features = [
   {
     id: "0",
-    icon: "/images/feature-1.png",
+    icon: feature1,
     caption: "Easy integration",
     title: "Work smarter not harder",
     text: "With Xora, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.",
     button: {
-      icon: "/images/magictouch.svg",
+      icon: magicTouch,
       title: "Watch the demo",
     },
   },
   {
     id: "1",
-    icon: "/images/feature-2.png",
+    icon: feature2,
     caption: "Secure & trustworthy",
     title: "Sleep easy, we got your back",
     text: "Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Xora helps keeps your information secure and locked up tighter than Fort Knox.",
     button: {
-      icon: "/images/docs.svg",
+      icon: docs,
       title: "Read the docs",
     },
   },
@@ -28,22 +57,22 @@ export const features = [
 export const details = [
   {
     id: "0",
-    icon: "/images/detail-1.png",
+    icon: detail1,
     title: "AI automated video editing",
   },
   {
     id: "1",
-    icon: "/images/detail-2.png",
+    icon: detail2,
     title: "Collaborate with your team",
   },
   {
     id: "2",
-    icon: "/images/detail-3.png",
+    icon: detail3,
     title: "Ultra fast cloud-engine",
   },
   {
     id: "3",
-    icon: "/images/detail-4.png",
+    icon: detail4,
     title: "24 / 7 Customer support",
   },
 ] as const;
@@ -124,8 +153,8 @@ export const plans = [
       "5 projects",
       "24/7 support",
     ],
-    icon: "/images/circle.svg",
-    logo: "/images/plan-1.png",
+    icon: circle,
+    logo: plan1,
   },
   {
     id: "1",
@@ -139,8 +168,8 @@ export const plans = [
       "Unlimited projects",
       "Analytics",
     ],
-    icon: "/images/triangle.svg",
-    logo: "/images/plan-2.png",
+    icon: triangle,
+    logo: plan2,
   },
   {
     id: "2",
@@ -154,8 +183,8 @@ export const plans = [
       "50% off per member",
       "Real-time collaboration",
     ],
-    icon: "/images/hexagon.svg",
-    logo: "/images/plan-3.png",
+    icon: hexagon,
+    logo: plan3,
   },
 ] as const;
 
@@ -164,7 +193,7 @@ export const testimonials = [
     id: "0",
     name: "Jessica Saunders",
     role: "Globalnomads",
-    avatarUrl: "/images/testimonials/jessica-saunders.png",
+    avatarUrl: jessicaSaunders,
     comment:
       "Xora's customer support is second to none! They're like my tech superheroes, always there when I need them.",
   },
@@ -172,7 +201,7 @@ export const testimonials = [
     id: "1",
     name: "Mark Erixon",
     role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/mark-erixon.png",
+    avatarUrl: markErixon,
     comment:
       "I was skeptical at first, but now I can't imagine our content operations without it. It's that impactful.",
   },
@@ -180,7 +209,7 @@ export const testimonials = [
     id: "2",
     name: "Melanie Hurst",
     role: "Cyberleap",
-    avatarUrl: "/images/testimonials/melanie-hurst.png",
+    avatarUrl: melanieHurst,
     comment:
       "Adopting this software was a breeze. It's made everyday tasks so much simpler.",
   },
@@ -188,7 +217,7 @@ export const testimonials = [
     id: "3",
     name: "Alicia Barker",
     role: "Cyberleap",
-    avatarUrl: "/images/testimonials/alicia-barker.png",
+    avatarUrl: aliciaBarker,
     comment:
       "The analytics feature is like having a personal fortune teller. It's been instrumental in guiding our business decisions.",
   },
@@ -196,7 +225,7 @@ export const testimonials = [
     id: "4",
     name: "Becky Snider",
     role: "Floclips",
-    avatarUrl: "/images/testimonials/becky-snider.png",
+    avatarUrl: beckySnider,
     comment:
       "Switched to Xora last month, and I'm already seeing results. Best decision for our team!",
   },
@@ -204,7 +233,7 @@ export const testimonials = [
     id: "5",
     name: "Jim Bradley",
     role: "Vid capital intl",
-    avatarUrl: "/images/testimonials/jim-bradley.png",
+    avatarUrl: jimBradley,
     comment:
       "The efficiency boost is undeniable. This platform has transformed our workflow, forever.",
   },
@@ -214,35 +243,35 @@ export const logos = [
   {
     id: "0",
     title: "Afterpay",
-    url: "/images/logos/afterpay.svg",
+    url: afterpay,
     width: 156,
     height: 48,
   },
   {
     id: "1",
     title: "Amplitude",
-    url: "/images/logos/amplitude.svg",
+    url: amplitude,
     width: 194,
     height: 48,
   },
   {
     id: "2",
     title: "Sonos",
-    url: "/images/logos/sonos.svg",
+    url: sonos,
     width: 115,
     height: 48,
   },
   {
     id: "3",
     title: "Maze",
-    url: "/images/logos/maze.svg",
+    url: maze,
     width: 142,
     height: 48,
   },
   {
     id: "4",
     title: "Drips",
-    url: "/images/logos/drips.svg",
+    url: drips,
     width: 77,
     height: 48,
   },
@@ -279,25 +308,25 @@ export const socials = [
   {
     id: "0",
     title: "x",
-    icon: "/images/socials/x.svg",
+    icon: xIcon,
     url: "#",
   },
   {
     id: "1",
     title: "Threads",
-    icon: "/images/socials/threads.svg",
+    icon: threads,
     url: "#",
   },
   {
     id: "2",
     title: "Instagram",
-    icon: "/images/socials/instagram.svg",
+    icon: instagram,
     url: "#",
   },
   {
     id: "3",
     title: "Discord",
-    icon: "/images/socials/discord.svg",
+    icon: discord,
     url: "#",
   },
 ] as const;
