@@ -109,7 +109,7 @@
   }
 
   .caption {
-    @apply small-2 mb-5 uppercase text-p3;
+    @apply mb-5 text-[12px] font-bold uppercase leading-[16px] tracking-[0.3em] text-p3;
   }
 
   .scroll-hide::-webkit-scrollbar {
@@ -152,21 +152,37 @@
   /* END of Hero */
   /*START of Custom Button*/
   .inner-before {
-    @apply before:g7 before:absolute before:inset-0 before:opacity-0 before:transition-opacity before:duration-500 before:content-[''];
+    @apply before:absolute before:inset-0 before:opacity-0 before:transition-opacity before:duration-500 before:content-[''];
+  }
+
+  .inner-before::before {
+    background: linear-gradient(#1b275a, #0e1434);
   }
 
   .glow-before {
-    @apply before:g8 before:absolute before:left-2/5 before:top-0 before:z-4 before:h-0.5 before:w-3/5 before:opacity-0 before:transition-all before:duration-500 before:content-[''] group-hover:before:left-4 group-hover:before:opacity-40;
+    @apply before:absolute before:left-2/5 before:top-0 before:z-4 before:h-0.5 before:w-3/5 before:opacity-0 before:transition-all before:duration-500 before:content-[''] group-hover:before:left-4 group-hover:before:opacity-40;
+  }
+
+  .glow-before::before {
+    background: linear-gradient(to right, transparent, #2ef2ff, transparent);
   }
 
   .glow-after {
-    @apply after:g8 after:absolute after:bottom-0 after:left-4 after:z-4 after:h-0.5 after:w-7/20 after:opacity-0 after:transition-all after:duration-500 after:content-[''] group-hover:after:left-3/5 group-hover:after:opacity-40;
+    @apply after:absolute after:bottom-0 after:left-4 after:z-4 after:h-0.5 after:w-7/20 after:opacity-0 after:transition-all after:duration-500 after:content-[''] group-hover:after:left-3/5 group-hover:after:opacity-40;
+  }
+
+  .glow-after::after {
+    background: linear-gradient(to right, transparent, #2ef2ff, transparent);
   }
 
   /*END of Custom Button*/
   /* START of Feature */
   .feature-after {
-    @apply after:g1 after:absolute after:right-0 after:top-0 after:h-full after:w-1/2 after:mix-blend-soft-light after:content-[''] max-md:after:hidden;
+    @apply after:absolute after:right-0 after:top-0 after:h-full after:w-1/2 after:mix-blend-soft-light after:content-[''] max-md:after:hidden;
+  }
+
+  .feature-after::after {
+    background: linear-gradient(rgba(196, 203, 245, 0.5), transparent);
   }
 
   /* END of Feature */
@@ -176,7 +192,7 @@
   }
 
   .pricing-head_btn {
-    @apply base-bold relative z-2 h-16 flex-1 uppercase text-p5 transition-colors duration-500 hover:text-p4;
+    @apply relative z-2 h-16 flex-1 text-[16px] font-bold uppercase leading-[24px] text-p5 transition-colors duration-500 hover:text-p4;
   }
 
   .pricing-head_btn_before {
@@ -200,7 +216,11 @@
   }
 
   .pricing-plan_even {
-    @apply even:g7 even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
+    @apply even:rounded-bl-3xl even:rounded-br-3xl even:rounded-tl-3xl even:rounded-tr-3xl even:border-s4;
+  }
+
+  .pricing-plan_even:nth-child(even) {
+    background: linear-gradient(#1b275a, #0e1434);
   }
 
   /* END of Pricing */
@@ -258,11 +278,19 @@
   }
 
   .download_preview-before {
-    @apply before:g8 before:absolute before:-top-0.5 before:right-6 before:h-0.5 before:w-[63.2%] before:opacity-40 before:content-[''];
+    @apply before:absolute before:-top-0.5 before:right-6 before:h-0.5 before:w-[63.2%] before:opacity-40 before:content-[''];
+  }
+
+  .download_preview-before::before {
+    background: linear-gradient(to right, transparent, #2ef2ff, transparent);
   }
 
   .download_preview-after {
-    @apply after:g8 after:absolute after:-bottom-0.5 after:left-6 after:h-0.5 after:w-[42.2%] after:opacity-40 after:content-[''];
+    @apply after:absolute after:-bottom-0.5 after:left-6 after:h-0.5 after:w-[42.2%] after:opacity-40 after:content-[''];
+  }
+
+  .download_preview-after::after {
+    background: linear-gradient(to right, transparent, #2ef2ff, transparent);
   }
 
   .download_preview-dot {
