@@ -6,7 +6,7 @@
       <div class="z-2 flex-1 lg:hidden">
         <a class="block w-fit cursor-pointer active">
           <img
-            src="./assets/images/xora.svg"
+            src="../../assets/images/xora.svg"
             alt="xora logo"
             width="115"
             height="55"
@@ -29,7 +29,30 @@
                 <div class="dot"></div>
                 <a
                   class="base-bold max-lg:h5 cursor-pointer uppercase text-p4 transition-colors duration-500 hover:text-p1 max-lg:my-4"
-                  >features</a
+                  >pricing</a
+                >
+              </li>
+              <li class="nav-logo">
+                <a
+                  class="cursor-pointer transition-transform duration-500 max-lg:hidden active"
+                >
+                  <img
+                    src="../../assets/images/xora.svg"
+                    alt="xora logo"
+                    width="160"
+                    height="55"
+                  />
+                </a>
+              </li>
+              <li class="nav-li">
+                <a
+                  class="base-bold max-lg:h5 cursor-pointer uppercase text-p4 transition-colors duration-500 hover:text-p1 max-lg:my-4"
+                  >FAQ</a
+                >
+                <div class="dot"></div>
+                <a
+                  class="base-bold max-lg:h5 cursor-pointer uppercase text-p4 transition-colors duration-500 hover:text-p1 max-lg:my-4"
+                  >Download</a
                 >
               </li>
             </ul>
