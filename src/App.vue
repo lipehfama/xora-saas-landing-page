@@ -1,7 +1,13 @@
 <script setup lang="ts">
-import HeroSection from "./components/HeroSection.vue";
+import Header from "./components/layout/Header.vue";
+import HeroSection from "./components/sections/HeroSection.vue";
+import Footer from "./components/layout/Footer.vue";
 </script>
 
 <template>
-  <HeroSection />
+  <main class="overflow-hidden">
+    <Header />
+    <HeroSection />
+    <Footer />
+  </main>
 </template>
