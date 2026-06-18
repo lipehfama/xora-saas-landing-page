@@ -5,13 +5,12 @@ import { socials, site_links } from "@/constants";
 <template>
   <footer>
     <div class="container py-10">
-      <section
-        class="small-compact flex w-full items-center max-md:flex-col"
-        aria-label="Footer"
-      >
-        <p class="flex flex-1 justify-center gap-5 opacity-70">
-          &copy; Copyright, Xora
-        </p>
+      <section class="flex w-full max-md:flex-col" aria-label="Footer">
+        <aside
+          class="sm-compact flex flex-1 flex-wrap items-center justify-center gap-5"
+        >
+          <p class="opacity-70">&copy; Copyright, Xora</p>
+        </aside>
 
         <nav
           class="flex items-center justify-center max-md:mt-4 sm:ml-auto"

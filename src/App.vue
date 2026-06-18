@@ -6,6 +6,7 @@ import Pricing from "./components/sections/Pricing.vue";
 import Footer from "./components/layout/Footer.vue";
 import Faq from "./components/sections/Faq.vue";
 import Testimonial from "./components/sections/Testimonial.vue";
+import Download from "./components/sections/Download.vue";
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Testimonial from "./components/sections/Testimonial.vue";
     <Pricing />
     <Faq />
     <Testimonial />
+    <Download />
     <Footer />
   </main>
 </template>
