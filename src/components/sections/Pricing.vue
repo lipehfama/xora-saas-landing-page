@@ -1,21 +1,17 @@
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { ref } from "vue";
 import { plans } from "@/constants";
 import PricingCard from "@/components/PricingCard.vue";
 import bgOutlines from "@/assets/images/bg-outlines.svg";
 import bgOutlinesFill from "@/assets/images/bg-outlines-fill.png";
 
 const monthly = ref(false);
-
-watch(monthly, (value) => {
-  console.log("monthly:", value);
-});
 </script>
 <template>
   <section id="pricing">
     <div class="container">
       <article
-        class="pricing-head_before relative mx-auto max-w-960 border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16"
+        class="pricing-head_before relative mx-auto max-w-960 border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-20 max-md:pt-16"
       >
         <h3
           class="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm"
@@ -45,7 +41,7 @@ watch(monthly, (value) => {
             :class="!monthly && 'translate-x-full'"
           />
         </div>
-        <figure class="pricing-bg">
+        <figure class="pricing-bg max-md:hidden">
           <img
             :src="bgOutlines"
             width="960"
@@ -64,7 +60,7 @@ watch(monthly, (value) => {
         </figure>
       </article>
       <article
-        class="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6"
+        class="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-auto max-xl:pt-6 max-md:mt-0 max-md:flex-col max-md:items-stretch max-md:gap-8 max-md:overflow-visible max-md:pt-0"
       >
         <PricingCard
           v-for="(plan, index) in plans"

@@ -38,7 +38,7 @@ watch(price, (newPrice, oldPrice) => {
 
 <template>
   <article
-    class="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%_+_2px)]"
+    class="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl max-md:min-w-0 max-md:p-6 xl:w-[calc(33.33%_+_2px)]"
   >
     <div
       v-if="isPrimaryPlan"
@@ -52,12 +52,16 @@ watch(price, (newPrice, oldPrice) => {
         :src="plan.logo"
         :alt="`${plan.title} plan`"
         class="object-contain drop-shadow-2xl"
-        :class="isPrimaryPlan ? 'size-[120px]' : 'size-[88px]'"
+        :class="
+          isPrimaryPlan
+            ? 'size-[120px] max-md:size-24'
+            : 'size-[88px] max-md:size-20'
+        "
       />
     </figure>
     <header
       class="relative flex flex-col items-center"
-      :class="isPrimaryPlan ? 'pt-24' : 'pt-12'"
+      :class="isPrimaryPlan ? 'pt-24 max-md:pt-20' : 'pt-12 max-md:pt-11'"
     >
       <div
         class="small-2 relative z-2 mx-auto mb-6 rounded-20 border-2 px-4 py-1.5 uppercase"
@@ -68,7 +72,7 @@ watch(price, (newPrice, oldPrice) => {
 
       <div class="relative z-2 flex items-center justify-center">
         <p
-          class="h-num flex items-start"
+          class="h-num flex items-start max-md:h2"
           :class="isPrimaryPlan ? 'text-p3' : 'text-p4'"
         >
           ${{ animatedPrice }}
@@ -79,13 +83,13 @@ watch(price, (newPrice, oldPrice) => {
     </header>
 
     <p
-      class="body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-p4"
+      class="body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-p4 max-md:mb-7 max-md:pb-7"
       :class="isPrimaryPlan && 'border-b'"
     >
       {{ plan.caption }}
     </p>
 
-    <ul class="mx-auto space-y-4 xl:px-7">
+    <ul class="mx-auto space-y-4 max-md:w-full xl:px-7">
       <li
         v-for="feature in plan.features"
         :key="`${plan.title}-${feature}`"
