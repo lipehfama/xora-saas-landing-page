@@ -48,6 +48,7 @@
 
   --spacing-22: 88px;
   --spacing-100: 100px;
+  --spacing-300: 300px;
   --spacing-512: 512px;
   --spacing-330: 330px;
   --spacing-388: 388px;
@@ -66,6 +67,7 @@
 
   --flex-50: 0 0 50%;
   --flex-320: 1 0 320px;
+  --flex-300: 0 0 300px;
 
   --z-index-1: 1;
   --z-index-2: 2;
