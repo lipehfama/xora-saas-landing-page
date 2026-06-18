@@ -4,6 +4,7 @@ import Hero from "./components/sections/Hero.vue";
 import Features from "./components/sections/Features.vue";
 import Pricing from "./components/sections/Pricing.vue";
 import Footer from "./components/layout/Footer.vue";
+import Faq from "./components/sections/Faq.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import Footer from "./components/layout/Footer.vue";
     <Hero />
     <Features />
     <Pricing />
+    <Faq />
     <Footer />
   </main>
 </template>
