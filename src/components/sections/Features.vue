@@ -4,7 +4,7 @@ import { features, details } from "@/constants";
 </script>
 
 <template>
-  <section>
+  <section id="features">
     <div class="container">
       <article
         class="feature-after md:g7 relative flex flex-nowrap rounded-40 border-2 border-s3 max-md:flex-col max-md:gap-3 max-md:rounded-none max-md:border-none md:flex-wrap md:overflow-hidden"

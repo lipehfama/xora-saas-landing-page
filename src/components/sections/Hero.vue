@@ -5,6 +5,7 @@ import zapIcon from "../../assets/images/zap.svg";
 
 <template>
   <section
+    id="hero"
     class="relative pb-40 pt-60 max-lg:pb-36 max-lg:pt-52 max-md:pb-32 max-md:pt-36"
   >
     <div class="container">
