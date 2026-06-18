@@ -218,7 +218,7 @@ onUnmounted(() => {
       >
         <img
           :src="isOpen ? closeIcon : magicIcon"
-          alt=""
+          alt="icon"
           class="size-1/2 object-contain"
         />
       </button>

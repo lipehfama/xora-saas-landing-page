@@ -14,7 +14,7 @@ import { features, details } from "@/constants";
           :key="feature.id"
           class="max-md:g7 relative z-2 flex-50 px-5 pb-5 max-md:flex-320 max-md:rounded-3xl max-md:border-2 max-md:border-s3 md:px-10 md:pb-10"
         >
-          <div class="flex w-full items-start justify-start">
+          <section class="flex w-full items-start justify-start">
             <figure
               class="-ml-3 mb-12 flex flex-col items-center justify-center"
             >
@@ -25,7 +25,7 @@ import { features, details } from "@/constants";
                 class="size-28 object-contain"
               />
             </figure>
-          </div>
+          </section>
           <p class="caption mb-5 max-md:mb-6">
             {{ feature.caption }}
           </p>
@@ -39,36 +39,39 @@ import { features, details } from "@/constants";
             {{ feature.button.title }}
           </Button>
         </div>
-        <ul
-          class="relative flex grow justify-around rounded-40 border-2 border-s3 px-[5%] max-md:hidden"
-        >
+        <section class="relative grow max-md:hidden">
+          <ul
+            class="relative flex justify-around rounded-40 border-2 border-s3 px-[5%]"
+          >
+            <li
+              v-for="detail in details"
+              :key="detail.id"
+              class="relative px-4 pb-14 pt-16"
+            >
+              <div
+                class="absolute bottom-0 left-1/2 top-0 z-10 h-full w-px bg-s3/20"
+              />
+              <figure
+                class="mx-auto mb-3 flex size-20 items-center justify-center rounded-full border-2 border-s2 shadow-500 transition-all duration-500 hover:border-s4"
+              >
+                <img
+                  :src="detail.icon"
+                  alt=""
+                  class="z-20 size-17/20 object-contain"
+                />
+              </figure>
+              <h3
+                class="base-small relative z-2 mx-auto my-0 max-w-36 text-center uppercase"
+              >
+                {{ detail.title }}
+              </h3>
+            </li>
+          </ul>
           <div
             class="absolute left-0 right-0 top-[38%] z-10 h-px w-full bg-s3/20"
+            aria-hidden="true"
           />
-          <li
-            v-for="detail in details"
-            :key="detail.id"
-            class="relative px-4 pb-14 pt-16"
-          >
-            <div
-              class="absolute bottom-0 left-1/2 top-0 z-10 h-full w-px bg-s3/20"
-            />
-            <figure
-              class="mx-auto mb-3 flex size-20 items-center justify-center rounded-full border-2 border-s2 shadow-500 transition-all duration-500 hover:border-s4"
-            >
-              <img
-                :src="detail.icon"
-                :alt="detail.title"
-                class="z-20 size-17/20 object-contain"
-              />
-            </figure>
-            <h3
-              class="base-small relative z-2 mx-auto my-0 max-w-36 text-center uppercase"
-            >
-              {{ detail.title }}
-            </h3>
-          </li>
-        </ul>
+        </section>
       </article>
     </div>
   </section>
